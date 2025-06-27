@@ -3,12 +3,12 @@ from django.urls import path, include
 from django.http import HttpResponse
 
 urlpatterns = [
-    # quick health check
+    # Health check endpoint
     path('ping/', lambda request: HttpResponse('pong')),
 
-    # admin site
+    # Admin site
     path('admin/', admin.site.urls),
 
-    # mount all app routes under /api/
+    # All API routes from app/urls.py live under /api/
     path('api/', include('app.urls')),
 ]
