@@ -1,0 +1,1 @@
+# Translate DB objects to JSON

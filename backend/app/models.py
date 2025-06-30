@@ -1,0 +1,1 @@
+# Define task and pet data structure
